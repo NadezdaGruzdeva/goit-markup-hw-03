@@ -78,7 +78,7 @@ img {
 .header {
 padding-top: 24px;
 padding-bottom: 24px;
-
+border: 1px solid #ececec;
 }
 
 .header .container {
@@ -170,15 +170,14 @@ margin: 0 auto;
 
 .hero {
   background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero .container {
+/*.hero .container {
   padding-left: 252px;
   padding-right: 252px;
-  padding-top: 280px;
-  padding-bottom: 200px;
-
-}
+}*/
 
 .hero-main-heading { 
   font-family: var(--main-font);
@@ -190,8 +189,7 @@ margin: 0 auto;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 30px;
- 
-  }
+ }
 
 .modal-btn {
   min-width: 200px;
@@ -214,15 +212,14 @@ margin: 0 auto;
   
   }
 
+  .specifications {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
 .hero-specification-list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-.hero-specification-list-item:not(last-child) {
-  margin-right: 30px;
- 
-}
+  }
+
 
 .hero-specification-heading {
   font-family: var(--main-font);
@@ -242,6 +239,10 @@ margin: 0 auto;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
+.hero-specification-list-item:not(:last-child) {
+  margin-right: 30px;
+ }
   /*===== end hero =====*/
 
   /*====== about ======*/
@@ -265,7 +266,7 @@ margin: 0 auto;
     margin-bottom: 50px;
   }
 
-  .about-list-item:not(last-child) {
+  .about-list-item:not(:last-child) {
     margin-right: 30px;
   }
   /*.about .container {
@@ -337,44 +338,48 @@ margin: 0 auto;
   color: var(--primary-text-color);
   } 
   */
-
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .button-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 34px;
   padding-bottom: 16px;
    
 }
 
-.button-list-item:not(last-child) {
-margin-right: 8px;
+.button-list-item:not(:last-child) {
+  margin-right: 8px;
 
 }
 
 .portfolio-modal-button {
 
-min-width: 128px;
-height: 38px;
-border: 1px solid #F5F4FA;
-border-radius: 4px;
-font-family: var(--main-font);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.625;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
-background-color: #F5F4FA;
-color: var(--primary-text-color);
-cursor: pointer;
-padding: 10px 32px;
+  min-width: 73px;
+  height: 38px;
+  border: 1px solid #F5F4FA;
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #F5F4FA;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  padding: 6px 22px;
 }
 
 .portfolio-modal-button:hover,
 .portfolio-modal-button:focus {
   background-color: #2196F3;
+  color: var(--primary-white-color);
+
 }
 
 /*.project-list
@@ -393,8 +398,6 @@ border: 1px solid #eeeeee;*/
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
-
 }
 .project-list-item {
   width: 370px;
@@ -435,16 +438,16 @@ border: 1px solid #eeeeee;*/
 /*======footer=====*/
 .footer {
   background-color:#2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .container {
   flex-direction: column;
-  height: 252px;
-  padding-top: 60px;
-  padding-bottom: 60px;
   }
   .address {
-    margin-top: 20px;
+  margin-top: 20px;
   }
+  
 /*.footer-logo-link {
 padding-top: 60px;
 margin-bottom: 20px;
@@ -458,14 +461,22 @@ margin-bottom: 20px;
   color: #2196F3;
   }
 .footer-contact-mail, .footer-contact-tel {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color:rgba(255, 255, 255, 0.6);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color:rgba(255, 255, 255, 0.6);
   }
-  .footer-address {
+  /*.footer-address-container {
+    padding-bottom: ;
+  }*/
+
+.footer-address-list-item:not(last-child) {
+    margin-bottom: 9px;
+  }
+
+.footer-address {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
@@ -477,11 +488,11 @@ margin-bottom: 20px;
   /*.footer .address {
     padding-bottom: 60px;
   }*/
-  .footer-contact-mail:hover,
-  .footer-contact-mail:focus,
-  .footer-contact-tel:hover,
-  .footer-contact-tel:focus {
-      color: #2196F3;}
+.footer-contact-mail:hover,
+.footer-contact-mail:focus,
+.footer-contact-tel:hover,
+.footer-contact-tel:focus {
+    color: #2196F3;}
 
   /*====end footer====*/
   
