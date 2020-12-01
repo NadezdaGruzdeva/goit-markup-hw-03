@@ -78,7 +78,7 @@ img {
 .header {
 padding-top: 24px;
 padding-bottom: 24px;
-border: 1px solid #ececec;
+border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -249,7 +249,7 @@ margin: 0 auto;
 
   .about {
     
-    padding-top: 94px;
+    
     padding-bottom: 94px;
   }
   .about-list {
@@ -278,6 +278,8 @@ margin: 0 auto;
   /*===== team ====*/
   .team {
    background-color: #F5F4FA;
+   padding-top: 94px;
+   padding-bottom: 94px;;
 }
   .team-title {
     font-family: var(--main-font);
@@ -288,16 +290,13 @@ margin: 0 auto;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-bottom: 50px;
-    padding-top: 94px;
-  }
+}
   /*.team-list
   
   .team-list-link*/
  .team-list {
     display: flex;
-    padding-bottom: 94px;
-
- }
+}
  .team-list-item:not(last-child) {
     margin-right: 30px;
 
@@ -387,6 +386,7 @@ margin: 0 auto;
 .project-list-link
 border: 1px solid #eeeeee;*/
 
+
 .project-list-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -407,7 +407,9 @@ border: 1px solid #eeeeee;*/
   margin-bottom: 30px;
 }
 
-
+.project-description {
+  padding: 20px 24px;
+}
 
 
 .project-title {
@@ -417,10 +419,8 @@ border: 1px solid #eeeeee;*/
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
+ 
 }
 
 .project-text {
@@ -430,9 +430,6 @@ border: 1px solid #eeeeee;*/
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 /*======footer=====*/
