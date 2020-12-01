@@ -90,6 +90,9 @@ border-bottom: 1px solid #ececec;
     margin-right: 93px;
     
   }
+  /*.address {
+    margin-top: 20px;
+    }*/
 
 .header .address {
     margin-left: auto;
@@ -441,9 +444,7 @@ border: 1px solid #eeeeee;*/
 .footer .container {
   flex-direction: column;
   }
-  .address {
-  margin-top: 20px;
-  }
+  
   
 /*.footer-logo-link {
 padding-top: 60px;
