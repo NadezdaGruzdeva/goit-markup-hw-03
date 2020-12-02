@@ -405,13 +405,15 @@ border: 1px solid #eeeeee;*/
 .project-list-item {
   width: 370px;
   height: 404px;
-  border: 1px solid #eeeeee;
+  
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
 .project-description {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 
